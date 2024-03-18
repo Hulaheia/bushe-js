@@ -1,0 +1,19 @@
+# 设置Session过期时间
+server:
+  servlet:
+    session:
+      timeout: 1D
+  port: 8082
+#MybatisPlus开启日志
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+spring:
+  application:
+    name: em_server
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/bishe?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: 122333wyh
+
